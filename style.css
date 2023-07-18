@@ -1,32 +1,93 @@
-h4 {
-    padding-top:100px;
+body {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;/*64px;*/
 }
-
-#corner_lession {
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 15px;
-    width: 100%;
+.hidden { display: none; }
+.notvisible { visibility: hidden; }
+#audio_play { margin-bottom: 16px; }
+/* ruby { font-size: 24px; } */
+/* rt { font-size: 12px; } */
+.horizontal-centered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
-
-#corner_mondai1 {
-    border-radius: 15px;
-    border: 3px solid #73AD21;
-    padding: 5px;
-    width: 95%;
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
-#corner_mondai2 {
-    border-radius: 25px;
-    background: url(paper.gif);
-    background-position: left top;
-    background-repeat: repeat;
-    width: 100%;
+.horizontal-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
-
-#audio_play {
-    padding-left:5px;
-    width: 98%;
-    height: 40px;
+.fixedbottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-
+.fixedfull {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+.overlay-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 90%;
+    width: 72%;
+    pointer-events: auto;
+}
+.nextsectionbutton {
+    align-self: flex-end;
+}
+#leftoverlay {
+    margin-left: 96px;
+    font-size: 20px;
+    user-select: none;
+}
+#middleoverlay {
+    font-size: 40px;
+    user-select: none;
+}
+#rightoverlay {
+    margin-right: 96px;
+    font-size: 20px;
+    user-select: none;
+}
+.circle-sm {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    background-color: #00000088;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+.circle-lg {
+    height: 120px;
+    width: 120px;
+    min-width: 120px;
+    background-color: #00000088;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}

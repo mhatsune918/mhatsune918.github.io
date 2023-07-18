@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="fixedbottom">
+        <audio id="audio_play" preload="auto" style="width: 100%;"></audio>
+    </div>
+    <a href="/">Back</a>
+    <h1 id="header"></h1>
+    <div id="content"></div>
+    <div class="horizontal-reverse">
+        <a id="nextsectionbutton" class="secondary" role="button" href="#">Next</a>
+        <a id="prevsectionbutton" class="secondary" role="button" href="#">Prev</a>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="lib.js"></script>
+    <script>renderData(rootdata);</script>
+
+    <div class="fixedfull">
+        <div class="overlay-container" id="hiddentouch">
+            <div class="horizontal-centered">
+                <div id="leftoverlay" class="circle-sm">≪</div>
+                <div id="middleoverlay" class="circle-lg">▶</div>
+                <div id="rightoverlay" class="circle-sm">≫</div>
+            </div>
+        </div>
+    </div>
+
+    <script>initOverlays();</script>
+</body>
+</html>
+
+
