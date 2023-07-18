@@ -13,7 +13,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    pointer-events: none;
 }
 .horizontal {
     display: flex;
@@ -59,15 +60,18 @@ body {
     margin-left: 96px;
     font-size: 20px;
     user-select: none;
+    pointer-events: auto;
 }
 #middleoverlay {
     font-size: 40px;
     user-select: none;
+    pointer-events: auto;
 }
 #rightoverlay {
     margin-right: 96px;
     font-size: 20px;
     user-select: none;
+    pointer-events: auto;
 }
 .circle-sm {
     width: 60px;

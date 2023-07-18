@@ -104,7 +104,6 @@ var initOverlays = () => {
 
     const leftoverlay = document.getElementById("leftoverlay");
     leftoverlay.addEventListener('click', e => {
-        console.log('LEFT');
         const audio = document.getElementById("audio_play");
         audio.currentTime -= 3;
         e.stopPropagation();
@@ -131,10 +130,10 @@ var initOverlays = () => {
         e.stopPropagation();
     });
     const hiddentouch = document.getElementById("hiddentouch");
-    hiddentouch.addEventListener('click', e => {
+    hiddentouch.addEventListener('click', () => {
         togglecontrols();
     });
-    hiddentouch.addEventListener('touchmove', e => {
+    hiddentouch.addEventListener('touchmove', () => {
         hidecontrols();
     });
 

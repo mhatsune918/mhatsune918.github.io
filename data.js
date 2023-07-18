@@ -2593,120 +2593,120 @@ const rootdata = {
     {
       "dialog": [
         {
-          "original": "<ruby>健康<rp>(</rp><rt>けんこう</rt><rp>)</rp></ruby>のために<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>かしてる？",
-          "translation": "What are you doing for your health?"
+          "original": "ね、そのクッキー、<ruby>一口<rp>(</rp><rt>ひとくち</rt><rp>)</rp></ruby>ちょうだい？",
+          "translation": "Hey, can I have a bite of that cookie?"
         },
         {
-          "original": "はい。<ruby>飲<rp>(</rp><rt>の</rt><rp>)</rp></ruby>みすぎないようにしています。",
-          "translation": "Yes, I'm trying not to drink too much."
+          "original": "あー、もう<ruby>全部<rp>(</rp><rt>ぜんぶ</rt><rp>)</rp></ruby><ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べちゃった。ごめんごめん。",
+          "translation": "Ah, I already ate all of it. Sorry, sorry."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>に<ruby>来<rp>(</rp><rt>く</rt><rp>)</rp></ruby>るとき、<ruby>緊張<rp>(</rp><rt>きんちょう</rt><rp>)</rp></ruby>しましたか？",
-          "translation": "Were you nervous when you came to Japan?"
+          "original": "あ、<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>ってる。",
+          "translation": "Oh, it's raining."
         },
         {
-          "original": "ええ、<ruby>初<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めて<ruby>外国<rp>(</rp><rt>がいこく</rt><rp>)</rp></ruby>で<ruby>一人暮<rp>(</rp><rt>ひとりぐ</rt><rp>)</rp></ruby>らしですから。",
-          "translation": "Yes, it's my first time living alone in a foreign country."
+          "original": "あ、じゃ、このかさかしてあげる。<ruby>二<rp>(</rp><rt>に</rt><rp>)</rp></ruby><ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>あるから。",
+          "translation": "Oh, then let me lend you this umbrella. I have two of them."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "メールが<ruby>送<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>れないんだけど、だれがわかる<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>いない？",
-          "translation": "I can't send emails. Is there anyone who knows how to fix it?"
+          "original": "お<ruby>茶<rp>(</rp><rt>ちゃ</rt><rp>)</rp></ruby>、どうぞ。<ruby>熱<rp>(</rp><rt>あつ</rt><rp>)</rp></ruby>いのでお<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>をつけください。",
+          "translation": "Here's some tea. Be careful, it's hot."
         },
         {
-          "original": "よくわかんないんだよね。<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>さんがいればわかるけど。",
-          "translation": "I'm not sure. Yamada-san would know, though."
+          "original": "あ、すみません。",
+          "translation": "Oh, I'm sorry."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>、<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ったら<ruby>家族<rp>(</rp><rt>かぞく</rt><rp>)</rp></ruby>から<ruby>手紙<rp>(</rp><rt>てがみ</rt><rp>)</rp></ruby>が<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ていたんだ。お<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby><ruby>送<rp>(</rp><rt>おく</rt><rp>)</rp></ruby>ってくれるんって。",
-          "translation": "Yesterday, when I got home, I received a letter from my family. They said they're sending money."
+          "original": "もしもし、<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>さん？<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、<ruby>話<rp>(</rp><rt>はな</rt><rp>)</rp></ruby>して<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>？",
+          "translation": "Hello, is this Mr. Yamada? Is it a good time to talk?"
         },
         {
-          "original": "へー、よかったね。",
-          "translation": "Wow, that's great!"
+          "original": "あ、ごめん。<ruby>今<rp>(</rp><rt>こん</rt><rp>)</rp></ruby>シャワー<ruby>浴<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>びていたところなんだ。<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で<ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>していい？",
+          "translation": "Ah, sorry. I was taking a shower. Can you call me back later?"
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>田中<rp>(</rp><rt>たなか</rt><rp>)</rp></ruby>さん、<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>までに<ruby>書類<rp>(</rp><rt>しょるい</rt><rp>)</rp></ruby><ruby>作<rp>(</rp><rt>つく</rt><rp>)</rp></ruby>っておいてくださいね。",
-          "translation": "Tanaka-san, please prepare the documents by tomorrow."
+          "original": "ねー、<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いた？<ruby>山田<rp>(</rp><rt>やまだ</rt><rp>)</rp></ruby>さん、<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>するんだって。",
+          "translation": "Hey, did you hear? Mr. Yamada is getting married."
         },
         {
-          "original": "はい。わかりました。",
-          "translation": "Yes, I understand."
+          "original": "うん、おめでたらしいよ。",
+          "translation": "Yeah, that's wonderful."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "ねー、<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いて。<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>の<ruby>店<rp>(</rp><rt>みせ</rt><rp>)</rp></ruby>、ビールと<ruby>焼<rp>(</rp><rt>や</rt><rp>)</rp></ruby>き<ruby>鳥<rp>(</rp><rt>とり</rt><rp>)</rp></ruby>で４０００<ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>もしたんだ？",
-          "translation": "Hey, listen. Yesterday at the restaurant, the bill for beer and yakitori was 4,000 yen?"
+          "original": "あれ？ビデオデッキに<ruby>変<rp>(</rp><rt>へん</rt><rp>)</rp></ruby>なビデオが<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>っていますね？",
+          "translation": "Huh? There's a strange video in the VCR, isn't there?"
         },
         {
-          "original": "え、<ruby>高<rp>(</rp><rt>たか</rt><rp>)</rp></ruby>い！　それってぼったくりじゃない？",
-          "translation": "Wow, that's expensive! Isn't that a rip-off?"
+          "original": "<ruby>本当<rp>(</rp><rt>ほんとう</rt><rp>)</rp></ruby>だ。だれが<ruby>入<rp>(</rp><rt>い</rt><rp>)</rp></ruby>れたんでしょうね。",
+          "translation": "You're right. I wonder who put it in."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あれ？この<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby><ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>？　おもしろそう。<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>せて。",
-          "translation": "Huh? What's this book? It looks interesting. Show me."
+          "original": "ねー、もってきれいに<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてください。これなんて<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いてあるんですか？",
+          "translation": "Hey, can you write neatly on this? What does it say?"
         },
         {
-          "original": "うん、すっごくおもしろいよ。",
-          "translation": "Yeah, it's really interesting."
+          "original": "あー、なんでしょう。<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>も<ruby>読<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>めません。",
+          "translation": "Oh, I'm not sure either. I can't read it."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あ〜あ、ダイエットしてるのに、また<ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べちゃった。",
-          "translation": "Oh no, I ate again even though I'm on a diet."
+          "original": "ねー、<ruby>飛行機<rp>(</rp><rt>ひこうき</rt><rp>)</rp></ruby>の<ruby>予約<rp>(</rp><rt>よやく</rt><rp>)</rp></ruby>してある？",
+          "translation": "Hey, do you have the flight reservation?"
         },
         {
-          "original": "ダイエットやめたら。",
-          "translation": "Why don't you quit your diet then?"
+          "original": "あ、ごめんなさい。<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>、しておきます。",
+          "translation": "Oh, I'm sorry. I'll do it now."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>を<ruby>探<rp>(</rp><rt>さが</rt><rp>)</rp></ruby>しているんだけど、<ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>かおすすめ<ruby>知<rp>(</rp><rt>し</rt><rp>)</rp></ruby>ってる？",
-          "translation": "I'm looking for a dictionary. Do you know any recommendations?"
+          "original": "<ruby>約束<rp>(</rp><rt>やくそく</rt><rp>)</rp></ruby>したのにどうしてきてくれなかったの？",
+          "translation": "You promised, so why didn't you come?"
         },
         {
-          "original": "<ruby>辞書<rp>(</rp><rt>じしょ</rt><rp>)</rp></ruby>のことなら、バクさんに<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いたら？この<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby><ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しいの<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>ってたよ。",
-          "translation": "If it's about dictionaries, why don't you ask Bakusan? They bought a new one the other day."
+          "original": "ごめん。<ruby>本当<rp>(</rp><rt>ほんとう</rt><rp>)</rp></ruby>にごめん。どうしても<ruby>会議<rp>(</rp><rt>かいぎ</rt><rp>)</rp></ruby>ぬけられなかったんだ。",
+          "translation": "I'm sorry. I'm really sorry. I couldn't get out of the meeting."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "ちょっと<ruby>会<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>わないうちにずいぶん<ruby>日本語<rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby>が<ruby>上手<rp>(</rp><rt>じょうず</rt><rp>)</rp></ruby>になったね。",
-          "translation": "You've become quite good at Japanese while we haven't seen each other, haven't you?"
+          "original": "<ruby>今度<rp>(</rp><rt>こんど</rt><rp>)</rp></ruby>、ご<ruby>飯<rp>(</rp><rt>はん</rt><rp>)</rp></ruby>でもいかがですか？",
+          "translation": "How about having a meal together next time?"
         },
         {
-          "original": "またまた〜。",
-          "translation": "Oh, stop it."
+          "original": "あ、ぜひ。",
+          "translation": "Oh, definitely."
         }
       ]
     }
@@ -3085,120 +3085,120 @@ const rootdata = {
     {
       "dialog": [
         {
-          "original": "<ruby>新<rp>(</rp><rt>あたら</rt><rp>)</rp></ruby>しく<ruby>始<rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>まるドラマ、<ruby>面白<rp>(</rp><rt>おもしろ</rt><rp>)</rp></ruby>そうだよ。",
-          "translation": "The new drama that's starting looks interesting."
+          "original": "あ、ラジカセこわれた？",
+          "translation": "Oh no, is the radio cassette player broken?"
         },
         {
-          "original": "あー、あんまり<ruby>興味<rp>(</rp><rt>きょうみ</rt><rp>)</rp></ruby>ないな。",
-          "translation": "Oh, I'm not really interested in it."
+          "original": "こわれたんじゃなくて、こわしたんでしょ。",
+          "translation": "It's not broken, you broke it, right?"
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>木村<rp>(</rp><rt>きむら</rt><rp>)</rp></ruby>さんってどんな<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>？",
-          "translation": "What kind of person is Kimura-san?"
+          "original": "<ruby>来月<rp>(</rp><rt>らいげつ</rt><rp>)</rp></ruby>、<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>することになりました。",
+          "translation": "I'm getting married next month."
         },
         {
-          "original": "うん、<ruby>明<rp>(</rp><rt>あか</rt><rp>)</rp></ruby>るくて<ruby>社交<rp>(</rp><rt>しゃこう</rt><rp>)</rp></ruby><ruby>的<rp>(</rp><rt>てき</rt><rp>)</rp></ruby>な<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>だよ。",
-          "translation": "Yeah, he's a bright and sociable person."
+          "original": "それはよかったですね。おめでとうございます。",
+          "translation": "That's great! Congratulations."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あー、<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>は<ruby>雨<rp>(</rp><rt>あめ</rt><rp>)</rp></ruby>が<ruby>降<rp>(</rp><rt>お</rt><rp>)</rp></ruby>りそうだね。",
-          "translation": "Oh, it looks like it's going to rain today."
+          "original": "どうぞたくさん<ruby>召<rp>(</rp><rt>め</rt><rp>)</rp></ruby>し<ruby>上<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>がれ。",
+          "translation": "Please eat a lot."
         },
         {
-          "original": "うん、かさを<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>って<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ったほうが<ruby>良<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>さそうだね。",
-          "translation": "Yeah, it seems like a good idea to bring an umbrella."
+          "original": "それじゃ、<ruby>遠慮<rp>(</rp><rt>えんりょ</rt><rp>)</rp></ruby>なくいただきます。",
+          "translation": "Well then, I'll have it without hesitation."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "すみません。<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>をわすれてしまいました〜。",
-          "translation": "Sorry. I forgot to do my homework..."
+          "original": "どんなペンをお<ruby>探<rp>(</rp><rt>さが</rt><rp>)</rp></ruby>しですか？",
+          "translation": "What kind of pen are you looking for?"
         },
         {
-          "original": "そうですか！",
-          "translation": "Oh, really!"
+          "original": "えーと、なるべく<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>いのがいいんですが。",
+          "translation": "Um, I prefer something cheap if possible."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あんなこと<ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>うつもりじゃなかったのに？",
-          "translation": "I didn't mean to say something like that..."
+          "original": "<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>て、この<ruby>時計<rp>(</rp><rt>とけい</rt><rp>)</rp></ruby>、１０００<ruby>円<rp>(</rp><rt>えん</rt><rp>)</rp></ruby>だったんだ？",
+          "translation": "Look, this watch was only 1000 yen?"
         },
         {
-          "original": "<ruby>口<rp>(</rp><rt>くち</rt><rp>)</rp></ruby>はわざわいの<ruby>元<rp>(</rp><rt>もと</rt><rp>)</rp></ruby>だね。",
-          "translation": "Words can be the source of trouble."
+          "original": "うそ！ロレックスじゃないんだ。<ruby>本物<rp>(</rp><rt>ほんもの</rt><rp>)</rp></ruby>みたいに<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>えたけど。",
+          "translation": "No way! It's not a Rolex. It looked like the real thing."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>の<ruby>習慣<rp>(</rp><rt>しゅうかん</rt><rp>)</rp></ruby>について<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えてください。",
-          "translation": "Please tell me about Japanese customs."
+          "original": "もしもし、<ruby>俺<rp>(</rp><rt>おれ</rt><rp>)</rp></ruby>だけど、<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby><ruby>何<rp>(</rp><rt>なに</rt><rp>)</rp></ruby>してるの？",
+          "translation": "Hello, it's me. What are you doing now?"
         },
         {
-          "original": "そうだね。<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>では<ruby>家<rp>(</rp><rt>いえ</rt><rp>)</rp></ruby>に<ruby>入<rp>(</rp><rt>はい</rt><rp>)</rp></ruby>る<ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby>、<ruby>靴<rp>(</rp><rt>くつ</rt><rp>)</rp></ruby>を<ruby>脱<rp>(</rp><rt>ぬ</rt><rp>)</rp></ruby>ぐんですよ。",
-          "translation": "Well, in Japan, we take off our shoes when entering a house."
+          "original": "ん？<ruby>今<rp>(</rp><rt>こん</rt><rp>)</rp></ruby>テレビ<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>てたこと。",
+          "translation": "Huh? I was watching TV."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>私<rp>(</rp><rt>わたし</rt><rp>)</rp></ruby>、<ruby>料理<rp>(</rp><rt>りょうり</rt><rp>)</rp></ruby>するのがすきなの。",
-          "translation": "I really like cooking."
+          "original": "ホワイトボード、<ruby>消<rp>(</rp><rt>け</rt><rp>)</rp></ruby>しましょうか？",
+          "translation": "Shall we erase the whiteboard?"
         },
         {
-          "original": "へー、<ruby>一度<rp>(</rp><rt>いちど</rt><rp>)</rp></ruby><ruby>食<rp>(</rp><rt>た</rt><rp>)</rp></ruby>べてみたいな。",
-          "translation": "Oh, I'd love to try your cooking sometime."
+          "original": "<ruby>大丈夫<rp>(</rp><rt>だいじょうぶ</rt><rp>)</rp></ruby>。そのままにしておいて。<ruby>後<rp>(</rp><rt>あと</rt><rp>)</rp></ruby>で<ruby>消<rp>(</rp><rt>け</rt><rp>)</rp></ruby>しますから。",
+          "translation": "It's fine. Leave it as it is. I'll erase it later."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "どうすれば<ruby>金持<rp>(</rp><rt>かねも</rt><rp>)</rp></ruby>ちになれると<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>う？",
-          "translation": "What do you think is the way to become rich?"
+          "original": "どうしたの？ <ruby>勉強<rp>(</rp><rt>べんきょう</rt><rp>)</rp></ruby>に<ruby>集中<rp>(</rp><rt>しゅうちゅう</rt><rp>)</rp></ruby>できないようだけど。",
+          "translation": "What's wrong? You seem unable to concentrate on studying."
         },
         {
-          "original": "やっぱ、<ruby>宝<rp>(</rp><rt>たから</rt><rp>)</rp></ruby>くじかな。",
-          "translation": "Well, maybe winning the lottery."
+          "original": "はい。<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>になることがあって。。。",
+          "translation": "Yes. There's something on my mind..."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>日本<rp>(</rp><rt>にっぽん</rt><rp>)</rp></ruby>にいる<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に、できるだけ<ruby>旅行<rp>(</rp><rt>りょこう</rt><rp>)</rp></ruby>しようと<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>っています。",
-          "translation": "I'm planning to travel as much as possible while I'm in Japan."
+          "original": "ごめん、ごめん。<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>った？",
+          "translation": "Sorry, sorry. Did you wait?"
         },
         {
-          "original": "あー、それはいいですね。",
-          "translation": "Oh, that sounds great."
+          "original": "もう、ひどいよ。１<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>も<ruby>待<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>たせた。",
+          "translation": "Oh, it's terrible. You made me wait for an hour."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>思<rp>(</rp><rt>おも</rt><rp>)</rp></ruby>ったよりスムーズにいったね。",
-          "translation": "It went more smoothly than I thought."
+          "original": "ドライヤーなら、<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>これが<ruby>一番<rp>(</rp><rt>いちばん</rt><rp>)</rp></ruby>のおすすめです。",
+          "translation": "If it's a hair dryer, this one is currently the best recommendation."
         },
         {
-          "original": "<ruby>本当<rp>(</rp><rt>ほんとう</rt><rp>)</rp></ruby>だね。もっと<ruby>時間<rp>(</rp><rt>じかん</rt><rp>)</rp></ruby>がかかるとおもったのに。",
-          "translation": "Yeah, really. I thought it would take more time."
+          "original": "そうですか。じゃ、<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>う<ruby>前<rp>(</rp><rt>まえ</rt><rp>)</rp></ruby>にちょっと<ruby>試<rp>(</rp><rt>ため</rt><rp>)</rp></ruby>してみてもいいですか？",
+          "translation": "Is that so? Well, can I try it out before buying?"
         }
       ]
     }
@@ -3675,120 +3675,120 @@ const rootdata = {
     {
       "dialog": [
         {
-          "original": "あの<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>、どうだった？",
-          "translation": "How was that movie?"
+          "original": "カラオケ、いかがですか？",
+          "translation": "How about karaoke?"
         },
         {
-          "original": "うん、たいしたことなかった。",
-          "translation": "Yeah, it wasn't anything special."
+          "original": "あ、<ruby>結構<rp>(</rp><rt>けっこう</rt><rp>)</rp></ruby>です。",
+          "translation": "Ah, no thanks."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>のテスト、たいしたことなかったね。",
-          "translation": "Yesterday's test wasn't anything special, right?"
+          "original": "ねー、びんぼうゆすり、やめて？",
+          "translation": "Hey, can you stop shaking me?"
         },
         {
-          "original": "え〜、<ruby>難<rp>(</rp><rt>むずか</rt><rp>)</rp></ruby>しかったよ。",
-          "translation": "Oh no, it was difficult."
+          "original": "あ、してた？",
+          "translation": "Oh, was I doing it?"
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>結婚<rp>(</rp><rt>けっこん</rt><rp>)</rp></ruby>すると<ruby>自由<rp>(</rp><rt>じゆう</rt><rp>)</rp></ruby>がなくなるって<ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>いますが。。。",
-          "translation": "They say that getting married means losing your freedom..."
+          "original": "あ、どうもすみません。<ruby>助<rp>(</rp><rt>たす</rt><rp>)</rp></ruby>かりました。",
+          "translation": "Oh, thank you very much. I appreciate it."
         },
         {
-          "original": "そうとも<ruby>限<rp>(</rp><rt>かぎ</rt><rp>)</rp></ruby>らないでしょう。",
-          "translation": "Well, it's not necessarily true."
+          "original": "あ、よかった。<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>にしないで。",
+          "translation": "Oh, it's fine. Don't worry about it."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>携帯<rp>(</rp><rt>けいたい</rt><rp>)</rp></ruby><ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>、<ruby>変<rp>(</rp><rt>か</rt><rp>)</rp></ruby>えたの？",
-          "translation": "Did you change your mobile phone?"
+          "original": "お<ruby>邪魔<rp>(</rp><rt>じゃま</rt><rp>)</rp></ruby>します。これ、<ruby>召<rp>(</rp><rt>め</rt><rp>)</rp></ruby>し<ruby>上<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>がってください。<ruby>京都<rp>(</rp><rt>きょうと</rt><rp>)</rp></ruby>のおみやげです。",
+          "translation": "I'm sorry for intruding. Please have this. It's a souvenir from Kyoto."
         },
         {
-          "original": "ええ、こっちのほうが<ruby>昨日<rp>(</rp><rt>きのう</rt><rp>)</rp></ruby>が<ruby>良<rp>(</rp><rt>よ</rt><rp>)</rp></ruby>くて、<ruby>料金<rp>(</rp><rt>りょうきん</rt><rp>)</rp></ruby>も<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>いから。",
-          "translation": "Yeah, this one is better and cheaper in terms of the plan."
+          "original": "あ、ありがとう。<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>を<ruby>使<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>わないでね。",
+          "translation": "Oh, thank you. Don't worry about it."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>携帯<rp>(</rp><rt>けいたい</rt><rp>)</rp></ruby><ruby>電話<rp>(</rp><rt>でんわ</rt><rp>)</rp></ruby>の<ruby>番号<rp>(</rp><rt>ばんごう</rt><rp>)</rp></ruby>とメールアドレスがかわりました。",
-          "translation": "My mobile phone number and email address have changed."
+          "original": "あ、くつひも、ほどけてるよ。",
+          "translation": "Oh, your shoelace is untied."
         },
         {
-          "original": "えー、じゃあ、<ruby>教<rp>(</rp><rt>おし</rt><rp>)</rp></ruby>えて。",
-          "translation": "Oh, then please tell me."
+          "original": "あれ？さっき<ruby>結<rp>(</rp><rt>むす</rt><rp>)</rp></ruby>んだのに。",
+          "translation": "Huh? I just tied it earlier."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "DVDを<ruby>書<rp>(</rp><rt>か</rt><rp>)</rp></ruby>いたいんですけど・・・",
-          "translation": "I want to burn a DVD, but..."
+          "original": "あ、えり、<ruby>立<rp>(</rp><rt>た</rt><rp>)</rp></ruby>ってるよ。",
+          "translation": "Oh, your collar is standing up."
         },
         {
-          "original": "じゃー、<ruby>西新宿<rp>(</rp><rt>にししんじゅく</rt><rp>)</rp></ruby>のカメラ<ruby>屋<rp>(</rp><rt>や</rt><rp>)</rp></ruby>に<ruby>行<rp>(</rp><rt>い</rt><rp>)</rp></ruby>ってみたら？<ruby>秋葉原<rp>(</rp><rt>あきはばら</rt><rp>)</rp></ruby>より<ruby>安<rp>(</rp><rt>やす</rt><rp>)</rp></ruby>いよ。",
-          "translation": "Then why don't you try going to the camera shop in Nishi-Shinjuku? It's cheaper than Akihabara."
+          "original": "あ、どうもありがとう。",
+          "translation": "Oh, thank you very much."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "そのカメラ、ずいぶん<ruby>古<rp>(</rp><rt>ふる</rt><rp>)</rp></ruby>いね？",
-          "translation": "That camera is quite old, isn't it?"
+          "original": "ホラー<ruby>映画<rp>(</rp><rt>えいが</rt><rp>)</rp></ruby>って<ruby>大<rp>(</rp><rt>だい</rt><rp>)</rp></ruby>っ<ruby>嫌<rp>(</rp><rt>きら</rt><rp>)</rp></ruby>い。どうしてみるのが。その<ruby>気持<rp>(</rp><rt>きも</rt><rp>)</rp></ruby>ちがわかんない。",
+          "translation": "I hate horror movies. I don't understand why people watch them. I can't relate to that feeling."
         },
         {
-          "original": "そうなんだ。しょうぶで<ruby>長持<rp>(</rp><rt>ながも</rt><rp>)</rp></ruby>ちだよ。",
-          "translation": "Yeah, it's sturdy and long-lasting."
+          "original": "へー、いがいと<ruby>怖<rp>(</rp><rt>こわ</rt><rp>)</rp></ruby>がりだね。",
+          "translation": "Oh, you're unexpectedly scared easily."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "もう、<ruby>申<rp>(</rp><rt>もう</rt><rp>)</rp></ruby>し<ruby>込<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>んだ？",
-          "translation": "Have you applied already?"
+          "original": "<ruby>今日<rp>(</rp><rt>きょう</rt><rp>)</rp></ruby>、<ruby>寝過<rp>(</rp><rt>ねす</rt><rp>)</rp></ruby>ごしてびっくりしたよ。<ruby>起<rp>(</rp><rt>お</rt><rp>)</rp></ruby>きたらもう８<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>なんだもん。",
+          "translation": "I overslept today and was surprised. When I woke up, it was already 8 o'clock."
         },
         {
-          "original": "また、<ruby>手続<rp>(</rp><rt>てつづ</rt><rp>)</rp></ruby>きが<ruby>面倒<rp>(</rp><rt>めんどう</rt><rp>)</rp></ruby>くさいんだ。",
-          "translation": "No, the procedures are troublesome again."
+          "original": "へー、でも、よく<ruby>間<rp>(</rp><rt>ま</rt><rp>)</rp></ruby>に<ruby>合<rp>(</rp><rt>あ</rt><rp>)</rp></ruby>ったねー。",
+          "translation": "Oh, but you still made it in time."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "<ruby>明日<rp>(</rp><rt>あした</rt><rp>)</rp></ruby>の<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>ごろは<ruby>北海道<rp>(</rp><rt>ほっかいどう</rt><rp>)</rp></ruby>にいるんです。",
-          "translation": "By this time tomorrow, I'll be in Hokkaido."
+          "original": "<ruby>起立<rp>(</rp><rt>きりつ</rt><rp>)</rp></ruby>、<ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>をつけ、<ruby>礼<rp>(</rp><rt>れい</rt><rp>)</rp></ruby>！",
+          "translation": "Stand up, attention, bow!"
         },
         {
-          "original": "え〜、いいな〜。",
-          "translation": "Oh, I'm envious."
+          "original": "おはようございます。",
+          "translation": "Good morning."
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あなたの<ruby>国<rp>(</rp><rt>くに</rt><rp>)</rp></ruby>では、どうですか？",
-          "translation": "How about in your country?"
+          "original": "お<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れ<ruby>様<rp>(</rp><rt>さま</rt><rp>)</rp></ruby>でした。",
+          "translation": "Thank you for your hard work."
         },
         {
-          "original": "うーん、<ruby>実<rp>(</rp><rt>じつ</rt><rp>)</rp></ruby>はしばらく<ruby>帰<rp>(</rp><rt>かえ</rt><rp>)</rp></ruby>ってないので、よくわからないんです。",
-          "translation": "Well, actually, I haven't been back for a while, so I'm not sure."
+          "original": "お<ruby>疲<rp>(</rp><rt>つか</rt><rp>)</rp></ruby>れ<ruby>様<rp>(</rp><rt>さま</rt><rp>)</rp></ruby>でした。",
+          "translation": "Thank you for your hard work."
         }
       ]
     }

@@ -2593,120 +2593,120 @@ exports.data = {
     {
       "dialog": [
         {
-          "original": "健康のために何かしてる？",
-          "translation": "What are you doing for your health?",
+          "original": "ね、そのクッキー、一口ちょうだい？",
+          "translation": "Hey, can I have a bite of that cookie?",
         },
         {
-          "original": "はい。飲みすぎないようにしています。",
-          "translation": "Yes, I'm trying not to drink too much.",
+          "original": "あー、もう全部食べちゃった。ごめんごめん。",
+          "translation": "Ah, I already ate all of it. Sorry, sorry.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "日本に来るとき、緊張しましたか？",
-          "translation": "Were you nervous when you came to Japan?",
+          "original": "あ、雨が降ってる。",
+          "translation": "Oh, it's raining.",
         },
         {
-          "original": "ええ、初めて外国で一人暮らしですから。",
-          "translation": "Yes, it's my first time living alone in a foreign country.",
+          "original": "あ、じゃ、このかさかしてあげる。二本あるから。",
+          "translation": "Oh, then let me lend you this umbrella. I have two of them.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "メールが送れないんだけど、だれがわかる人いない？",
-          "translation": "I can't send emails. Is there anyone who knows how to fix it?",
+          "original": "お茶、どうぞ。熱いのでお気をつけください。",
+          "translation": "Here's some tea. Be careful, it's hot.",
         },
         {
-          "original": "よくわかんないんだよね。山田さんがいればわかるけど。",
-          "translation": "I'm not sure. Yamada-san would know, though.",
+          "original": "あ、すみません。",
+          "translation": "Oh, I'm sorry.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "昨日、帰ったら家族から手紙が来ていたんだ。お金送ってくれるんって。",
-          "translation": "Yesterday, when I got home, I received a letter from my family. They said they're sending money.",
+          "original": "もしもし、山田さん？今、話して大丈夫？",
+          "translation": "Hello, is this Mr. Yamada? Is it a good time to talk?",
         },
         {
-          "original": "へー、よかったね。",
-          "translation": "Wow, that's great!",
+          "original": "あ、ごめん。今シャワー浴びていたところなんだ。後で電話していい？",
+          "translation": "Ah, sorry. I was taking a shower. Can you call me back later?",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "田中さん、明日までに書類作っておいてくださいね。",
-          "translation": "Tanaka-san, please prepare the documents by tomorrow.",
+          "original": "ねー、聞いた？山田さん、結婚するんだって。",
+          "translation": "Hey, did you hear? Mr. Yamada is getting married.",
         },
         {
-          "original": "はい。わかりました。",
-          "translation": "Yes, I understand.",
+          "original": "うん、おめでたらしいよ。",
+          "translation": "Yeah, that's wonderful.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "ねー、聞いて。昨日の店、ビールと焼き鳥で４０００円もしたんだ？",
-          "translation": "Hey, listen. Yesterday at the restaurant, the bill for beer and yakitori was 4,000 yen?",
+          "original": "あれ？ビデオデッキに変なビデオが入っていますね？",
+          "translation": "Huh? There's a strange video in the VCR, isn't there?",
         },
         {
-          "original": "え、高い！　それってぼったくりじゃない？",
-          "translation": "Wow, that's expensive! Isn't that a rip-off?",
+          "original": "本当だ。だれが入れたんでしょうね。",
+          "translation": "You're right. I wonder who put it in.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あれ？この本何？　おもしろそう。見せて。",
-          "translation": "Huh? What's this book? It looks interesting. Show me.",
+          "original": "ねー、もってきれいに書いてください。これなんて書いてあるんですか？",
+          "translation": "Hey, can you write neatly on this? What does it say?",
         },
         {
-          "original": "うん、すっごくおもしろいよ。",
-          "translation": "Yeah, it's really interesting.",
+          "original": "あー、なんでしょう。私も読めません。",
+          "translation": "Oh, I'm not sure either. I can't read it.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あ〜あ、ダイエットしてるのに、また食べちゃった。",
-          "translation": "Oh no, I ate again even though I'm on a diet.",
+          "original": "ねー、飛行機の予約してある？",
+          "translation": "Hey, do you have the flight reservation?",
         },
         {
-          "original": "ダイエットやめたら。",
-          "translation": "Why don't you quit your diet then?",
+          "original": "あ、ごめんなさい。今、しておきます。",
+          "translation": "Oh, I'm sorry. I'll do it now.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "辞書を探しているんだけど、何かおすすめ知ってる？",
-          "translation": "I'm looking for a dictionary. Do you know any recommendations?",
+          "original": "約束したのにどうしてきてくれなかったの？",
+          "translation": "You promised, so why didn't you come?",
         },
         {
-          "original": "辞書のことなら、バクさんに聞いたら？この前新しいの買ってたよ。",
-          "translation": "If it's about dictionaries, why don't you ask Bakusan? They bought a new one the other day.",
+          "original": "ごめん。本当にごめん。どうしても会議ぬけられなかったんだ。",
+          "translation": "I'm sorry. I'm really sorry. I couldn't get out of the meeting.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "ちょっと会わないうちにずいぶん日本語が上手になったね。",
-          "translation": "You've become quite good at Japanese while we haven't seen each other, haven't you?",
+          "original": "今度、ご飯でもいかがですか？",
+          "translation": "How about having a meal together next time?",
         },
         {
-          "original": "またまた〜。",
-          "translation": "Oh, stop it.",
+          "original": "あ、ぜひ。",
+          "translation": "Oh, definitely.",
         }
       ]
     }
@@ -3085,120 +3085,120 @@ exports.data = {
     {
       "dialog": [
         {
-          "original": "新しく始まるドラマ、面白そうだよ。",
-          "translation": "The new drama that's starting looks interesting.",
+          "original": "あ、ラジカセこわれた？",
+          "translation": "Oh no, is the radio cassette player broken?",
         },
         {
-          "original": "   あー、あんまり興味ないな。",
-          "translation": "Oh, I'm not really interested in it.",
+          "original": "こわれたんじゃなくて、こわしたんでしょ。",
+          "translation": "It's not broken, you broke it, right?",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "木村さんってどんな人？",
-          "translation": "What kind of person is Kimura-san?",
+          "original": "来月、結婚することになりました。",
+          "translation": "I'm getting married next month.",
         },
         {
-          "original": "   うん、明るくて社交的な人だよ。",
-          "translation": "Yeah, he's a bright and sociable person.",
+          "original": "それはよかったですね。おめでとうございます。",
+          "translation": "That's great! Congratulations.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あー、今日は雨が降りそうだね。",
-          "translation": "Oh, it looks like it's going to rain today.",
+          "original": "どうぞたくさん召し上がれ。",
+          "translation": "Please eat a lot.",
         },
         {
-          "original": "   うん、かさを持って行ったほうが良さそうだね。",
-          "translation": "Yeah, it seems like a good idea to bring an umbrella.",
+          "original": "それじゃ、遠慮なくいただきます。",
+          "translation": "Well then, I'll have it without hesitation.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "すみません。宿題をわすれてしまいました〜。",
-          "translation": "Sorry. I forgot to do my homework...",
+          "original": "どんなペンをお探しですか？",
+          "translation": "What kind of pen are you looking for?",
         },
         {
-          "original": "   そうですか！",
-          "translation": "Oh, really!",
+          "original": "えーと、なるべく安いのがいいんですが。",
+          "translation": "Um, I prefer something cheap if possible.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あんなこと言うつもりじゃなかったのに？",
-          "translation": "I didn't mean to say something like that...",
+          "original": "見て、この時計、１０００円だったんだ？",
+          "translation": "Look, this watch was only 1000 yen?",
         },
         {
-          "original": "   口はわざわいの元だね。",
-          "translation": "Words can be the source of trouble.",
+          "original": "うそ！ロレックスじゃないんだ。本物みたいに見えたけど。",
+          "translation": "No way! It's not a Rolex. It looked like the real thing.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "日本の習慣について教えてください。",
-          "translation": "Please tell me about Japanese customs.",
+          "original": "もしもし、俺だけど、今何してるの？",
+          "translation": "Hello, it's me. What are you doing now?",
         },
         {
-          "original": "   そうだね。日本では家に入る時、靴を脱ぐんですよ。",
-          "translation": "Well, in Japan, we take off our shoes when entering a house.",
+          "original": "ん？今テレビ見てたこと。",
+          "translation": "Huh? I was watching TV.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "私、料理するのがすきなの。",
-          "translation": "I really like cooking.",
+          "original": "ホワイトボード、消しましょうか？",
+          "translation": "Shall we erase the whiteboard?",
         },
         {
-          "original": "   へー、一度食べてみたいな。",
-          "translation": "Oh, I'd love to try your cooking sometime.",
+          "original": "大丈夫。そのままにしておいて。後で消しますから。",
+          "translation": "It's fine. Leave it as it is. I'll erase it later.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "どうすれば金持ちになれると思う？",
-          "translation": "What do you think is the way to become rich?",
+          "original": "どうしたの？ 勉強に集中できないようだけど。",
+          "translation": "What's wrong? You seem unable to concentrate on studying.",
         },
         {
-          "original": "   やっぱ、宝くじかな。",
-          "translation": "Well, maybe winning the lottery.",
+          "original": "はい。気になることがあって。。。",
+          "translation": "Yes. There's something on my mind...",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "日本にいる間に、できるだけ旅行しようと思っています。",
-          "translation": "I'm planning to travel as much as possible while I'm in Japan.",
+          "original": "ごめん、ごめん。待った？",
+          "translation": "Sorry, sorry. Did you wait?",
         },
         {
-          "original": "   あー、それはいいですね。",
-          "translation": "Oh, that sounds great.",
+          "original": "もう、ひどいよ。１時間も待たせた。",
+          "translation": "Oh, it's terrible. You made me wait for an hour.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "思ったよりスムーズにいったね。",
-          "translation": "It went more smoothly than I thought.",
+          "original": "ドライヤーなら、今これが一番のおすすめです。",
+          "translation": "If it's a hair dryer, this one is currently the best recommendation.",
         },
         {
-          "original": "    本当だね。もっと時間がかかるとおもったのに。",
-          "translation": "Yeah, really. I thought it would take more time.",
+          "original": "そうですか。じゃ、買う前にちょっと試してみてもいいですか？",
+          "translation": "Is that so? Well, can I try it out before buying?",
         }
       ]
     }
@@ -3675,120 +3675,120 @@ exports.data = {
     {
       "dialog": [
         {
-          "original": "あの映画、どうだった？",
-          "translation": "How was that movie?",
+          "original": "カラオケ、いかがですか？",
+          "translation": "How about karaoke?",
         },
         {
-          "original": "   うん、たいしたことなかった。",
-          "translation": "Yeah, it wasn't anything special.",
+          "original": "あ、結構です。",
+          "translation": "Ah, no thanks.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "昨日のテスト、たいしたことなかったね。",
-          "translation": "Yesterday's test wasn't anything special, right?",
+          "original": "ねー、びんぼうゆすり、やめて？",
+          "translation": "Hey, can you stop shaking me?",
         },
         {
-          "original": "   え〜、難しかったよ。",
-          "translation": "Oh no, it was difficult.",
+          "original": "あ、してた？",
+          "translation": "Oh, was I doing it?",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "結婚すると自由がなくなるって言いますが。。。",
-          "translation": "They say that getting married means losing your freedom...",
+          "original": "あ、どうもすみません。助かりました。",
+          "translation": "Oh, thank you very much. I appreciate it.",
         },
         {
-          "original": "   そうとも限らないでしょう。",
-          "translation": "Well, it's not necessarily true.",
+          "original": "あ、よかった。気にしないで。",
+          "translation": "Oh, it's fine. Don't worry about it.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "携帯電話、変えたの？",
-          "translation": "Did you change your mobile phone?",
+          "original": "お邪魔します。これ、召し上がってください。京都のおみやげです。",
+          "translation": "I'm sorry for intruding. Please have this. It's a souvenir from Kyoto.",
         },
         {
-          "original": "   ええ、こっちのほうが昨日が良くて、料金も安いから。",
-          "translation": "Yeah, this one is better and cheaper in terms of the plan.",
+          "original": "あ、ありがとう。気を使わないでね。",
+          "translation": "Oh, thank you. Don't worry about it.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "携帯電話の番号とメールアドレスがかわりました。",
-          "translation": "My mobile phone number and email address have changed.",
+          "original": "あ、くつひも、ほどけてるよ。",
+          "translation": "Oh, your shoelace is untied.",
         },
         {
-          "original": "   えー、じゃあ、教えて。",
-          "translation": "Oh, then please tell me.",
+          "original": "あれ？さっき結んだのに。",
+          "translation": "Huh? I just tied it earlier.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "DVDを書いたいんですけど・・・",
-          "translation": "I want to burn a DVD, but...",
+          "original": "あ、えり、立ってるよ。",
+          "translation": "Oh, your collar is standing up.",
         },
         {
-          "original": "   じゃー、西新宿のカメラ屋に行ってみたら？秋葉原より安いよ。",
-          "translation": "Then why don't you try going to the camera shop in Nishi-Shinjuku? It's cheaper than Akihabara.",
+          "original": "あ、どうもありがとう。",
+          "translation": "Oh, thank you very much.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "そのカメラ、ずいぶん古いね？",
-          "translation": "That camera is quite old, isn't it?",
+          "original": "ホラー映画って大っ嫌い。どうしてみるのが。その気持ちがわかんない。",
+          "translation": "I hate horror movies. I don't understand why people watch them. I can't relate to that feeling.",
         },
         {
-          "original": "   そうなんだ。しょうぶで長持ちだよ。",
-          "translation": "Yeah, it's sturdy and long-lasting.",
+          "original": "へー、いがいと怖がりだね。",
+          "translation": "Oh, you're unexpectedly scared easily.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "もう、申し込んだ？",
-          "translation": "Have you applied already?",
+          "original": "今日、寝過ごしてびっくりしたよ。起きたらもう８時なんだもん。",
+          "translation": "I overslept today and was surprised. When I woke up, it was already 8 o'clock.",
         },
         {
-          "original": "   また、手続きが面倒くさいんだ。",
-          "translation": "No, the procedures are troublesome again.",
+          "original": "へー、でも、よく間に合ったねー。",
+          "translation": "Oh, but you still made it in time.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "明日の今ごろは北海道にいるんです。",
-          "translation": "By this time tomorrow, I'll be in Hokkaido.",
+          "original": "起立、気をつけ、礼！",
+          "translation": "Stand up, attention, bow!",
         },
         {
-          "original": "   え〜、いいな〜。",
-          "translation": "Oh, I'm envious.",
+          "original": "おはようございます。",
+          "translation": "Good morning.",
         }
       ]
     },
     {
       "dialog": [
         {
-          "original": "あなたの国では、どうですか？",
-          "translation": "How about in your country?",
+          "original": "お疲れ様でした。",
+          "translation": "Thank you for your hard work.",
         },
         {
-          "original": "    うーん、実はしばらく帰ってないので、よくわからないんです。",
-          "translation": "Well, actually, I haven't been back for a while, so I'm not sure.",
+          "original": "お疲れ様でした。",
+          "translation": "Thank you for your hard work.",
         }
       ]
     }
