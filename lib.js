@@ -1,4 +1,24 @@
-var renderData = (rootdata) => {
+const isMobile = () => { return window.matchMedia("(min-width: 450px)").matches; }
+
+const syncElements = () => {
+    const audio = document.getElementById("audio_play");
+    const mobilecontrols = document.getElementById("mobilecontrols");
+    if (isMobile()) {
+        audio.setAttribute("controls", "true");
+        document.body.style.paddingBottom = "64px";
+        mobilecontrols.style.visibility = "hidden";
+    } else {
+        audio.removeAttribute("controls");
+        document.body.style.paddingBottom = "16px";
+        mobilecontrols.style.visibility = "unset";
+    }
+}
+
+window.addEventListener('resize', () => {
+    syncElements();
+});
+
+const initData = (rootdata) => {
     var url = new URL(window.location.href);
 
     let unit = parseInt(url.searchParams.get("u"));
@@ -92,15 +112,18 @@ var renderData = (rootdata) => {
 document.addEventListener("pause", () => {
     const audio = document.getElementById("audio_play");
     audio.pause();
+    middleoverlay.innerText = "▶";
 }, false);
 
 window.addEventListener("blur", () => {
     const audio = document.getElementById("audio_play");
     audio.pause();
+    middleoverlay.innerText = "▶";
 });
 
 var initOverlays = () => {
     const audio = document.getElementById("audio_play");
+    const mobilecontrols = document.getElementById("mobilecontrols");
 
     const leftoverlay = document.getElementById("leftoverlay");
     leftoverlay.addEventListener('click', e => {
@@ -138,13 +161,19 @@ var initOverlays = () => {
     });
 
     const hidecontrols = () => {
-        leftoverlay.classList.add("notvisible");
-        middleoverlay.classList.add("notvisible");
-        rightoverlay.classList.add("notvisible");
+        leftoverlay.style.visibility = "hidden";
+        middleoverlay.style.visibility = "hidden";
+        rightoverlay.style.visibility = "hidden";
     }
     const togglecontrols = () => {
-        leftoverlay.classList.toggle("notvisible");
-        middleoverlay.classList.toggle("notvisible");
-        rightoverlay.classList.toggle("notvisible");
+        if (leftoverlay.style.visibility == "hidden") {
+            leftoverlay.style.visibility = "unset";
+            middleoverlay.style.visibility = "unset";
+            rightoverlay.style.visibility = "unset";
+        } else {
+            hidecontrols();
+        }
     }
+
+    syncElements();
 }

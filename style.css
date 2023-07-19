@@ -2,13 +2,12 @@ body {
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16px;/*64px;*/
+    padding-bottom: 16px;
 }
 .hidden { display: none; }
-.notvisible { visibility: hidden; }
 #audio_play { margin-bottom: 16px; }
-/* ruby { font-size: 24px; } */
-/* rt { font-size: 12px; } */
+ruby { font-size: 16px; }
+rt { font-size: 10px; }
 .horizontal-centered {
     display: flex;
     flex-direction: row;
@@ -31,6 +30,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 .fixedfull {
     display: flex;

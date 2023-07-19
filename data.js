@@ -263,8 +263,8 @@ const rootdata = {
           "translation": "What time is it now?"
         },
         {
-          "original": "４<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>です。",
-          "translation": "It's 4 o'clock."
+          "original": "４<ruby>時<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>。",
+          "translation": "4 o'clock."
         }
       ]
     },
@@ -299,7 +299,7 @@ const rootdata = {
           "translation": "What day is today?"
         },
         {
-          "original": "4<ruby>月<rp>(</rp><rt>つき</rt><rp>)</rp></ruby><ruby>一<rp>(</rp><rt>いち</rt><rp>)</rp></ruby><ruby>日<rp>(</rp><rt>にち</rt><rp>)</rp></ruby>です。",
+          "original": "4<ruby>月<rp>(</rp><rt>がつ</rt><rp>)</rp></ruby><ruby>一日<rp>(</rp><rt>ついたち</rt><rp>)</rp></ruby>です。",
           "translation": "It's April 1st."
         }
       ]
