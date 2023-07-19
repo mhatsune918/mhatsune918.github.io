@@ -1,13 +1,29 @@
+:root {
+    --font-size: 20px;
+    --furigana-size: 14px;
+    --bottom-gap: 60px;
+    --player-height: 60px;
+    --menu-height: 36px;
+}
 body {
-    padding-top: 16px;
+    padding-top: var(--menu-height);
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16px;
 }
+a { text-decoration:none }
+@media only screen and (min-width: 549px) {
+    body { padding-bottom: calc(var(--bottom-gap) + var(--player-height)); }
+    #mobilecontrols { visibility: hidden; }
+}
+@media only screen and (max-width: 550px) {
+    body { padding-bottom: 16px; }
+    #mobilecontrols { visibility: unset; }
+}
+p { font-size: var(--font-size); }
 .hidden { display: none; }
-#audio_play { margin-bottom: 16px; }
-ruby { font-size: 16px; }
-rt { font-size: 10px; }
+#audio_play { margin-bottom: var(--bottom-gap); }
+ruby { font-size: var(--font-size); }
+rt { font-size: var(--furigana-size); }
 .horizontal-centered {
     display: flex;
     flex-direction: row;
@@ -33,6 +49,16 @@ rt { font-size: 10px; }
     margin-left: 16px;
     margin-right: 16px;
 }
+.fixedtop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 .fixedfull {
     display: flex;
     position: fixed;
@@ -41,7 +67,7 @@ rt { font-size: 10px; }
     justify-content: flex-start;
     left: 0;
     right: 0;
-    top: 0;
+    top: var(--menu-height);
     bottom: 0;
     pointer-events: none;
 }
@@ -95,4 +121,10 @@ rt { font-size: 10px; }
     justify-content: center;
     align-items: center;
     margin: 8px;
+}
+#topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #11191f;
 }
