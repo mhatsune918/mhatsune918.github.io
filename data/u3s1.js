@@ -1,14 +1,14 @@
 export const timestamps = [
-    4.506258, 10.087052, // 1
-    11.651315, 16.092471, // 2
-    17.495941, 24.251269, // 3
-    25.567006, 32.87619, // 4
-    34.524013, 41.937029, // 5
-    44.462743, 49.542879, // 6
-    51.840022, 57.85068, // 7
-    59.622607, 67.930362, // 8
-    70.56551, 74.678344, // 9
-    76.35882, 81.841836, // 10
+    5.10, 10.08, // 1
+    11.65, 16.09, // 2
+    17.49, 24.25, // 3
+    25.56, 32.87, // 4
+    34.52, 41.93, // 5
+    44.06, 49.54, // 6
+    51.84, 57.85, // 7
+    59.62, 67.93, // 8
+    70.06, 74.67, // 9
+    76.25, 81.44, // 10
 ];
 export default [
     {
@@ -50,8 +50,8 @@ export default [
     {
         "dialog": [
             {
-                "original": "<ruby>林<rp>(</rp><rt>はやし</rt><rp>)</rp></ruby>さん、<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>は？",
-                "translation": "Hayanashi, what about your homework?"
+                "original": "<ruby>林<rp>(</rp><rt>りん</rt><rp>)</rp></ruby>さん、<ruby>宿題<rp>(</rp><rt>しゅくだい</rt><rp>)</rp></ruby>は？",
+                "translation": "Rin, what about your homework?"
             },
             {
                 "original": "あ、<ruby>先生<rp>(</rp><rt>せんせい</rt><rp>)</rp></ruby>、<ruby>今<rp>(</rp><rt>いま</rt><rp>)</rp></ruby>ははが<ruby>来<rp>(</rp><rt>き</rt><rp>)</rp></ruby>ているので<ruby>来週<rp>(</rp><rt>らいしゅう</rt><rp>)</rp></ruby><ruby>出<rp>(</rp><rt>だ</rt><rp>)</rp></ruby>してもいいですか？",

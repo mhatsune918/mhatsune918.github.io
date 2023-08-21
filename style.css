@@ -3,10 +3,15 @@
     --furigana-size: 14px;
     --bottom-gap: 60px;
     --player-height: 60px;
+    --menu-padding: 8px;
     --menu-height: 36px;
 }
+* {
+    user-select: none;
+}
 body {
-    padding-top: var(--menu-height);
+    margin-top: var(--menu-height);
+    padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -123,6 +128,8 @@ rt { font-size: var(--furigana-size); }
     margin: 8px;
 }
 #topbar {
+    padding-top: var(--menu-padding);
+    padding-bottom: var(--menu-padding);
     display: flex;
     flex-direction: row;
     justify-content: space-between;

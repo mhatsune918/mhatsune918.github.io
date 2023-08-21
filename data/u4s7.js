@@ -1,3 +1,15 @@
+export const timestamps = [
+    4.9, 12.6, // 1
+    15.1, 20.1, // 2
+    22.2, 28.5, // 3
+    31.0, 42.1, // 4
+    44.4, 52.3, // 5
+    54.7, 61.1, // 6
+    63.7, 68.7, // 7
+    71.2, 77.0, // 8
+    79.6, 86.9, // 9
+    89.2, 95.1, // 10
+];
 export default [
     {
         "dialog": [
@@ -114,7 +126,7 @@ export default [
                 "translation": "I made a phone reservation for the concert tickets."
             },
             {
-                "original": "じゃー、すぐにお<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby><ruby>振<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>り<ruby>込<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>まなくちゃ。",
+                "original": "じゃー、すぐにお<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby><ruby>振<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>り<ruby>込<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>まなくちゃね。",
                 "translation": "Okay, I'll have to transfer the money right away."
             }
         ]

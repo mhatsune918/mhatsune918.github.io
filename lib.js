@@ -10,11 +10,14 @@ const getIntSetting = (key, def) => {
     return parseInt(ret);
 }
 
+const DELAY_SECS_BETWEEN = 0.5;
+const SEEK_DELTA_SECS = 5.0;
+
 const SPEEDKEY = 'PB_SPEED';
 const REPEATKEY = 'PB_REPEAT';
 const SHOWENGLISH = 'SHOW_ENG';
 
-let _pbSpeeds = [1.0, 0.8, 0.5];
+let _pbSpeeds = [1.0, 0.8];//, 0.5];
 let pbSpeedCurrentIndex = getIntSetting(SPEEDKEY, 0);
 const selectNextPlaybackSpeed = () => { pbSpeedCurrentIndex = setIntSetting(SPEEDKEY, (pbSpeedCurrentIndex + 1) % _pbSpeeds.length); }
 const currentPlaybackSpeed = () => _pbSpeeds[pbSpeedCurrentIndex % _pbSpeeds.length];
@@ -44,6 +47,8 @@ class PlayControl {
     #timestamps;
     /** @type {HTMLElement | null} */
     #middleoverlay = null;
+    /** @type {number | undefined} */
+    #currentIndex;
     /**
      * @param {HTMLMediaElement} audio
      * @param {number} unit
@@ -52,7 +57,7 @@ class PlayControl {
      */
     constructor(audio, unit, section, timestamps) {
         const audioSource = document.createElement("source");
-        audioSource.setAttribute("src", `audio/${unit}-${section}.mp3`);
+        audioSource.setAttribute("src", `mp3-cb/${unit}-${section}.mp3`);
         audioSource.setAttribute("type", "audio/mpeg");
         audio && audio.appendChild(audioSource);
         this.#audio = audio;
@@ -71,13 +76,37 @@ class PlayControl {
             this.#instance.destroy();
         this.#instance = new PlayControlInstance(this);
     }
+    /** @param {number} segmentindex */
     playSegment = async (segmentindex) => {
         this.#instance && await this.#instance.playSegment(segmentindex);
     }
+    /** @callback OnNextStep @return {void} */
+    /** @param {number} segmentindex @param {number} times @param {OnNextStep} onPlaySegment */
     repeat = async (segmentindex, times, onPlaySegment) => {
         this.#instance && await this.#instance.repeat(segmentindex, times, onPlaySegment);
     }
+    /** @param {Array} items @param {number|undefined} startsegmentindex */
+    autoplay = async (items, startsegmentindex) => {
+        let index = startsegmentindex ?? this.#currentIndex ?? 0;
+        this.reset();
+        await this.autoInc(index, async si => {
+            items.forEach((item, i) =>
+                item.style.opacity = i == si ? '100%' : '50%');
+            if (si < items.length) {
+                let padding = parseInt(getComputedStyle(document.documentElement)?.getPropertyValue('--menu-padding') || '0', 10);
+                let offset = parseInt(getComputedStyle(document.documentElement)?.getPropertyValue('--menu-height') || '0', 10);
+                scrollToTargetWithOffset(items[si], offset + padding * 2);
+            }
+            await this.repeat(si, currentRepeat(), async si => {
+                await _control.playSegment(si);
+                await sleep(DELAY_SECS_BETWEEN);
+            });
+        });
+    }
+    /** @callback OnExec @return {void} */
+    /** @param {number} startIndex @param {OnNextStep} onExec */
     autoInc = async (startIndex, onExec) => {
+        this.#currentIndex = startIndex;
         this.#instance && await this.#instance.autoInc(startIndex, onExec);
     }
     showControls = show => {
@@ -90,7 +119,20 @@ class PlayControl {
     audioPaused = () => {
         return this.#audio.paused;
     }
-    relativeSeek = secs => { this.#audio.currentTime += secs; }
+    /** @param {number} deltasecs */
+    relativeBoundedSeek = deltasecs => {
+        if (this.#currentIndex == undefined) return;
+        const i = this.#currentIndex;
+        if (i + 1 < this.#timestamps.length) {
+            const si = this.#timestamps[i + i];
+            const ei = this.#timestamps[i + i + 1];
+            const secs = Math.min(Math.max(this.#audio.currentTime + deltasecs, si), ei);
+            this.#audio.currentTime = secs;
+        }
+    }
+    relativeSeek = secs => {
+        this.#audio.currentTime += secs;
+    }
     currentTime = () => { return this.#audio.currentTime; }
     setCurrentTime = t => { this.#audio.currentTime = t; }
     playAudio = () => { 
@@ -134,7 +176,7 @@ class PlayControlInstance {
         let endidx = startidx + 1;
         if (endidx < this.#control.timestamps().length) {
             const starttime = this.#control.timestamps()[startidx];
-            const endtime = this.#control.timestamps()[endidx] + 1.0;
+            const endtime = this.#control.timestamps()[endidx];// + 1.0;
             try {
                 this.#control.setCurrentTime(starttime);
                 this.#control.playAudio();
@@ -167,7 +209,6 @@ class PlayControlInstance {
     }
     destroy = () => {
         if (!this.#cancelled) {
-            //console.log('destroy');
             this.#control.pauseAudio();
             this.#cancelled = true;
             this.#control.setCurrentTime(0);
@@ -188,6 +229,15 @@ const syncElements = () => {
 window.addEventListener('resize', () => {
     syncElements();
 });
+
+const scrollToTargetWithOffset = (element, headerOffset) => {
+    const elementPosition = element?.getBoundingClientRect().top || 0;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+}
 
 const init = async next => {
     const url = new URL(window.location.href);
@@ -220,6 +270,7 @@ const init = async next => {
     _control = new PlayControl(audio, unit, section, timestamps);
 
     const controls = document.getElementById('mobilecontrols');
+    if (controls) controls.style.visibility = 'hidden';
     if (timestamps) {
         _control.showControls(false);
     } else {
@@ -229,7 +280,7 @@ const init = async next => {
     let tmptimestamps = [];
     window.onkeydown = e => {
         if (e.key == 'p') {
-            tmptimestamps.push(_control.currentTime());
+            tmptimestamps.push(_control.currentTime().toFixed(1));
         } else if (e.key == 'Backspace') {
             if (tmptimestamps.length > 0)
                 tmptimestamps.pop();
@@ -308,11 +359,18 @@ const init = async next => {
     const ol = document.createElement("ol");
     if (contentContainer) contentContainer.appendChild(ol);
 
-    let items = jsonData.map((_, i) => {
-        let li = document.createElement('li');
+    const items = jsonData.map(() => {
+        const li = document.createElement('li');
         li.style.opacity = '40%';
         return li;
+    });
 
+    window.addEventListener('click', async () => {
+        if (!_control.audioPaused()) {
+            _control.relativeBoundedSeek(-SEEK_DELTA_SECS);
+        } else {
+            await _control.autoplay(items);
+        }
     });
 
     jsonData.forEach((sentenceObj, i) => {
@@ -332,22 +390,12 @@ const init = async next => {
         horizontalContainer.appendChild(rightContainer);
 
         if (timestamps) {
-            const playButton = document.createElement("a");
-            playButton.innerText = "▶️";
-            playButton.onclick = async _ => {
+            li.onclick = async e => {
                 hidecontrols(true);
-                _control.reset();
-                await _control.autoInc(i, async si => {
-                    items.forEach((item, i) =>
-                        item.style.opacity = i == si ? '100%' : '50%');
-                    if (si < items.length)
-                        items[si].scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    await _control.repeat(si, currentRepeat(), async si => {
-                        await _control.playSegment(si);
-                    });
-                });
-            }
-            rightContainer.appendChild(playButton);
+                if (e.clientX > 100) {
+                    await _control.autoplay(items, i);
+                }
+            };
         }
 
         const originalContainer = document.createElement("p");
