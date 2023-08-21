@@ -12,12 +12,13 @@ const getIntSetting = (key, def) => {
 
 const DELAY_SECS_BETWEEN = 0.5;
 const SEEK_DELTA_SECS = 5.0;
+const ENGLISH_OPACITY = 0.25;
 
 const SPEEDKEY = 'PB_SPEED';
 const REPEATKEY = 'PB_REPEAT';
 const SHOWENGLISH = 'SHOW_ENG';
 
-let _pbSpeeds = [1.0, 0.8];//, 0.5];
+let _pbSpeeds = [1.0, 0.8];
 let pbSpeedCurrentIndex = getIntSetting(SPEEDKEY, 0);
 const selectNextPlaybackSpeed = () => { pbSpeedCurrentIndex = setIntSetting(SPEEDKEY, (pbSpeedCurrentIndex + 1) % _pbSpeeds.length); }
 const currentPlaybackSpeed = () => _pbSpeeds[pbSpeedCurrentIndex % _pbSpeeds.length];
@@ -66,6 +67,7 @@ class PlayControl {
     /** @return {Object[]} */
     timestamps = () => this.#timestamps;
     audio = () => this.#audio;
+    /** @param {HTMLElement} overlay */
     setMiddleOverlay = overlay => {
         if (this.#middleoverlay)
             this.#middleoverlay.innerText = this.#audio.paused ? "▶" : "■";
@@ -85,7 +87,7 @@ class PlayControl {
     repeat = async (segmentindex, times, onPlaySegment) => {
         this.#instance && await this.#instance.repeat(segmentindex, times, onPlaySegment);
     }
-    /** @param {Array} items @param {number|undefined} startsegmentindex */
+    /** @param {HTMLElement[]} items @param {number|undefined} startsegmentindex */
     autoplay = async (items, startsegmentindex) => {
         let index = startsegmentindex ?? this.#currentIndex ?? 0;
         this.reset();
@@ -109,12 +111,14 @@ class PlayControl {
         this.#currentIndex = startIndex;
         this.#instance && await this.#instance.autoInc(startIndex, onExec);
     }
+    /** @param {boolean} show */
     showControls = show => {
         if (show)
             this.#audio.setAttribute("controls", "true");
         else
             this.#audio.removeAttribute("controls");
     }
+    /** @param {number} rate */
     setAudioPlaybackRate = rate => { this.#audio.playbackRate = rate }
     audioPaused = () => {
         return this.#audio.paused;
@@ -130,10 +134,12 @@ class PlayControl {
             this.#audio.currentTime = secs;
         }
     }
+    /** @param {number} secs */
     relativeSeek = secs => {
         this.#audio.currentTime += secs;
     }
     currentTime = () => { return this.#audio.currentTime; }
+    /** @param {number} t */
     setCurrentTime = t => { this.#audio.currentTime = t; }
     playAudio = () => { 
         if (this.#middleoverlay)
@@ -156,9 +162,7 @@ class PlayControlInstance {
     #cancelled = false;
     /** @type {PlayControl} #control */
     #control;
-    /**
-     * @param {PlayControl} control
-     */
+    /** @param {PlayControl} control */
     constructor(control) {
         this.#control = control;
     }
@@ -239,6 +243,8 @@ const scrollToTargetWithOffset = (element, headerOffset) => {
     });
 }
 
+/** @callback Next @return {void} */
+/** @param {Next} next */
 const init = async next => {
     const url = new URL(window.location.href);
 
@@ -247,8 +253,7 @@ const init = async next => {
     if (!unitstr || !sectionstr) return;
     const unit = parseInt(unitstr);
     const section = parseInt(sectionstr);
-
-    /** @return { Promise<{ jsonData?: Object, timestamps?: Object }> } */
+    /** @return { Promise<{ jsonData?: { dialog: { original: string, translation: string }[] }[], timestamps?: Object }> } */
     const loadData = async () => {
         try {
             const { default: jsonData, timestamps } = await import(`./data/u${unit}s${section}.js`);
@@ -368,8 +373,8 @@ const init = async next => {
     window.addEventListener('click', async () => {
         if (!_control.audioPaused()) {
             _control.relativeBoundedSeek(-SEEK_DELTA_SECS);
-        } else {
-            await _control.autoplay(items);
+        //} else {
+            //await _control.autoplay(items);
         }
     });
 
@@ -411,7 +416,7 @@ const init = async next => {
             engSentenceElement.classList.add('engsentence');
             engSentenceElement.innerHTML = d.translation;
             engSentenceElement.style.marginBottom = '16px';
-            engSentenceElement.style.opacity = '10%';
+            engSentenceElement.style.opacity = `${ENGLISH_OPACITY * 100}%`;
             engSentenceElement.style.visibility = currentShowEnglish() ? 'unset' : 'hidden';
             originalContainer.appendChild(engSentenceElement);
         }
