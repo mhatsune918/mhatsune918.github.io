@@ -96,7 +96,7 @@ class PlayControl {
     autoplay = async (items, startsegmentindex) => {
         let index = startsegmentindex ?? this.#currentIndex ?? 0;
         this.reset();
-        await this.autoInc(index, async si => {
+        await this.autoInc(index, items.length, async si => {
             items.forEach((item, i) =>
                 item.style.opacity = i == si ? '100%' : '50%');
             if (si < items.length) {
@@ -109,12 +109,15 @@ class PlayControl {
                 await sleep(DELAY_SECS_BETWEEN);
             });
         });
+        if (currentLooping()) {
+            await this.autoplay(items, 0);
+        }
     }
     /** @callback OnExec @return {void} */
-    /** @param {number} startIndex @param {OnNextStep} onExec */
-    autoInc = async (startIndex, onExec) => {
+    /** @param {number} startIndex @param {number} endIndex @param {OnNextStep} onExec */
+    autoInc = async (startIndex, endIndex, onExec) => {
         this.#currentIndex = startIndex;
-        this.#instance && await this.#instance.autoInc(startIndex, onExec);
+        this.#instance && await this.#instance.autoInc(startIndex, endIndex, onExec);
     }
     /** @param {boolean} show */
     showControls = show => {
@@ -143,6 +146,7 @@ class PlayControl {
     relativeSeek = secs => {
         this.#audio.currentTime += secs;
     }
+    currentIndex = () => this.#currentIndex;
     currentTime = () => { return this.#audio.currentTime; }
     /** @param {number} t */
     setCurrentTime = t => { this.#audio.currentTime = t; }
@@ -176,17 +180,18 @@ class PlayControlInstance {
      * @return {Promise<void>}
      */
     playSegment = async segmentindex => new Promise((res, rej) => {
-        if (this.#cancelled) {
-            console.log('cancelled', segmentindex);
-            return;
-        }
-        //console.log('play', segmentindex);
-        let startidx = segmentindex * 2;
-        let endidx = startidx + 1;
-        if (endidx < this.#control.timestamps().length) {
-            const starttime = this.#control.timestamps()[startidx];
-            const endtime = this.#control.timestamps()[endidx];// + 1.0;
-            try {
+        try {
+            if (this.#cancelled) {
+                console.log('cancelled', segmentindex);
+                return;
+            }
+            //console.log('play', segmentindex);
+            let startidx = segmentindex * 2;
+            let endidx = startidx + 1;
+            if (endidx < this.#control.timestamps().length) {
+                const starttime = this.#control.timestamps()[startidx];
+                const endtime = this.#control.timestamps()[endidx];// + 1.0;
+
                 this.#control.setCurrentTime(starttime);
                 this.#control.playAudio();
                 this.#control.audio().onplay = async _ => {
@@ -197,9 +202,11 @@ class PlayControlInstance {
                         res();
                     }
                 };
-            } catch (e) {
-                rej(e);
+            } else {
+                console.log('played empty segment');
             }
+        } catch (e) {
+            rej(e);
         }
     });
     repeat = async (segmentindex, times, onPlaySegment) => {
@@ -210,10 +217,12 @@ class PlayControlInstance {
             }
         }
     }
-    autoInc = async (startIndex, onExec) => {
+    autoInc = async (startIndex, endIndex, onExec) => {
         if (!this.#cancelled) {
             await onExec(startIndex);
-            await this.autoInc(startIndex + 1, onExec);
+            if (startIndex + 1 < endIndex) {
+                await this.autoInc(startIndex + 1, endIndex, onExec);
+            }
         }
     }
     destroy = () => {
@@ -289,7 +298,8 @@ const init = async next => {
 
     const loopbutton = document.getElementById('loop');
     if (loopbutton instanceof HTMLInputElement) {
-        loopbutton.onclick = _ => {
+        loopbutton.onclick = e => {
+            e.stopPropagation();
             toggleLooping();
         };
         loopbutton.checked = currentLooping();
@@ -319,7 +329,8 @@ const init = async next => {
 
     const speedbutton = document.getElementById("speed");
     if (speedbutton) {
-        speedbutton.onclick = _ => {
+        speedbutton.onclick = e => {
+            e.stopPropagation();
             selectNextPlaybackSpeed();
             speedbutton.innerText = `Speed ${currentPlaybackSpeed()}`;
             _control.setAudioPlaybackRate(currentPlaybackSpeed());
@@ -330,7 +341,8 @@ const init = async next => {
 
     const repeatbutton = document.getElementById('repeat');
     if (repeatbutton) {
-        repeatbutton.onclick = _ => {
+        repeatbutton.onclick = e => {
+            e.stopPropagation();
             selectNextRepeat();
             repeatbutton.innerText = `Repeat ${currentRepeat()}x`;
         };
@@ -339,7 +351,8 @@ const init = async next => {
 
     const langbutton = document.getElementById("lang");
     if (langbutton) {
-        langbutton.onclick = _ => {
+        langbutton.onclick = e => {
+            e.stopPropagation();
             toggleShowEnglish();
             const showeng = currentShowEnglish();
             langbutton.innerText = showeng ? "🇺🇸" : "🇯🇵";
