@@ -114,7 +114,7 @@ export default [
                 "translation": "Can you teach me how to read this kanji?"
             },
             {
-                "original": "うーん。わかんないなー。<ruby>他<rp>(</rp><rt>た</rt><rp>)</rp></ruby>の<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いて。",
+                "original": "うーん。わかんないなー。<ruby>他<rp>(</rp><rt>ほか</rt><rp>)</rp></ruby>の<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>に<ruby>聞<rp>(</rp><rt>き</rt><rp>)</rp></ruby>いて。",
                 "translation": "Hmm, I don't know. Ask someone else."
             }
         ]
