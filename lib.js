@@ -17,6 +17,7 @@ const ENGLISH_OPACITY = 0.25;
 const SPEEDKEY = 'PB_SPEED';
 const REPEATKEY = 'PB_REPEAT';
 const SHOWENGLISH = 'SHOW_ENG';
+const LOOPING = 'LOOPING';
 
 let _pbSpeeds = [1.0, 0.8];
 let pbSpeedCurrentIndex = getIntSetting(SPEEDKEY, 0);
@@ -31,6 +32,10 @@ const currentRepeat = () => _pbRepeats[pbRepeatCurrentIndex % _pbRepeats.length]
 let _showEnglish = getIntSetting(SHOWENGLISH, 0);
 const toggleShowEnglish = () => { _showEnglish = setIntSetting(SHOWENGLISH, _showEnglish == 0 ? 1 : 0); }
 const currentShowEnglish = () => { return _showEnglish > 0; }
+
+let _looping = getIntSetting(LOOPING, 0);
+const toggleLooping = () => { _looping = setIntSetting(LOOPING, _looping == 0 ? 1 : 0); }
+const currentLooping = () => { return _looping > 0; }
 
 const _timestamps = [];
 let sectionhastimestamps = false;
@@ -282,6 +287,14 @@ const init = async next => {
         _control.showControls(true);
     }
 
+    const loopbutton = document.getElementById('loop');
+    if (loopbutton instanceof HTMLInputElement) {
+        loopbutton.onclick = _ => {
+            toggleLooping();
+        };
+        loopbutton.checked = currentLooping();
+    }
+
     let tmptimestamps = [];
     window.onkeydown = e => {
         if (e.key == 'p') {
@@ -351,7 +364,7 @@ const init = async next => {
     const prevsectionbutton = document.getElementById("prevsectionbutton");
     if (prevsectionbutton) {
         if (section <= 1) {
-            prevsectionbutton.classList.add("hidden");
+            prevsectionbutton.style.visibility = 'hidden';
         } else {
             prevsectionbutton.onclick = e => {
                 e.preventDefault();
