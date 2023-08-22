@@ -50,7 +50,7 @@ export default [
     {
         "dialog": [
             {
-                "original": "この<ruby>辺<rp>(</rp><rt>あたり</rt><rp>)</rp></ruby>は<ruby>春<rp>(</rp><rt>はる</rt><rp>)</rp></ruby>になる<ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby>さくらがきれいでしょうね。",
+                "original": "この<ruby>辺<rp>(</rp><rt>へん</rt><rp>)</rp></ruby>は<ruby>春<rp>(</rp><rt>はる</rt><rp>)</rp></ruby>になる<ruby>時<rp>(</rp><rt>とき</rt><rp>)</rp></ruby>さくらがきれいでしょうね。",
                 "translation": "The cherry blossoms must be beautiful around here in spring."
             },
             {
